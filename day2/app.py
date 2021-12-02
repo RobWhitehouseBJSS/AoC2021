@@ -8,12 +8,13 @@ horizontal = 0
 vertical = 0
 
 for line in lines:
-    if line[0] == 'f':
-        horizontal = horizontal + int(line[-1])
-    elif line[0] == 'd':
-        vertical = vertical + int(line[-1])
-    elif line[0] == 'u':
-        vertical = vertical - int(line[-1])
+    command, num = line.split()
+    if command == 'forward':
+        horizontal += int(num)
+    elif command == 'down':
+        vertical += int(num)
+    elif command == 'up':
+        vertical -= int(num)
 
 total = horizontal * vertical
 
@@ -29,13 +30,14 @@ vertical = 0
 aim = 0
 
 for line in lines:
-    if line[0] == 'f':
-        horizontal = horizontal + int(line[-1])
-        vertical = vertical + (aim * int(line[-1]))
-    elif line[0] == 'd':
-        aim = aim + int(line[-1])
-    elif line[0] == 'u':
-        aim = aim - int(line[-1])
+    command, num = line.split()
+    if command == 'forward':
+        horizontal += int(num)
+        vertical += (aim * int(num))
+    elif command == 'down':
+        aim += int(num)
+    elif command == 'up':
+        aim -= int(num)
 
 total = horizontal * vertical
 
