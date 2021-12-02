@@ -1,0 +1,9 @@
+Part 1:
+Total: 1635930
+Horizontal: 1971
+Vertical: 830
+
+Part 2:
+Total: 1781819478
+Horizontal: 1971
+Vertical: 904018
