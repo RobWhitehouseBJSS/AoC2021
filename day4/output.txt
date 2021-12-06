@@ -1,0 +1,2 @@
+Part 1: Winning board score - 10680
+Part 2: Last winning board score - 31892
